@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAMBA LUV Airdrop UI Preview</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background: linear-gradient(135deg, #581c87 0%, #1e3a8a 50%, #3730a3 100%); }
+    </style>
+</head>
+<body class="min-h-screen text-white p-4">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold mb-2">SHAMBA LUV Airdrop</h1>
+            <p class="text-lg text-gray-300">Polygon Mainnet</p>
+        </div>
+
+        <!-- Wallet Connection -->
+        <div class="bg-black/20 backdrop-blur-lg rounded-xl p-6 mb-6 border border-purple-500/30">
+            <div class="flex justify-between items-center">
+                <div>
+                    <h2 class="text-xl font-semibold mb-2">Wallet Connection</h2>
+                    <div class="text-sm text-gray-300">Not connected</div>
+                </div>
+                <div class="flex gap-2">
+                    <button class="px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg transition-colors">
+                        Connect Wallet
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contract Stats -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <div class="bg-black/20 backdrop-blur-lg rounded-xl p-4 border border-purple-500/30">
+                <div class="text-2xl font-bold text-purple-400">1T</div>
+                <div class="text-xs text-gray-400">Airdrop Amount</div>
+            </div>
+            
+            <div class="bg-black/20 backdrop-blur-lg rounded-xl p-4 border border-green-500/30">
+                <div class="text-2xl font-bold text-green-400">0</div>
+                <div class="text-xs text-gray-400">Total Recipients</div>
+            </div>
+            
+            <div class="bg-black/20 backdrop-blur-lg rounded-xl p-4 border border-yellow-500/30">
+                <div class="text-2xl font-bold text-yellow-400">0</div>
+                <div class="text-xs text-gray-400">Total Claimed</div>
+            </div>
+            
+            <div class="bg-black/20 backdrop-blur-lg rounded-xl p-4 border border-blue-500/30">
+                <div class="text-2xl font-bold text-blue-400">0</div>
+                <div class="text-xs text-gray-400">Contract Balance</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- User Interface -->
+            <div class="bg-black/20 backdrop-blur-lg rounded-xl p-6 border border-purple-500/30">
+                <h2 class="text-xl font-semibold mb-4">Claim Airdrop</h2>
+                
+                <div class="text-center py-8">
+                    <div class="text-gray-400 mb-4">Connect your wallet to claim your airdrop</div>
+                </div>
+            </div>
+
+            <!-- Admin Interface (Hidden by default) -->
+            <div class="bg-black/20 backdrop-blur-lg rounded-xl p-6 border border-yellow-500/30 opacity-50">
+                <h2 class="text-xl font-semibold mb-4 text-yellow-400">Admin Panel</h2>
+                
+                <div class="space-y-4">
+                    <div class="bg-black/10 rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Set Airdrop Amount</h3>
+                        <div class="flex gap-2">
+                            <input type="text" placeholder="Amount in LUV" class="flex-1 px-3 py-2 bg-black/20 rounded border border-gray-600 text-white placeholder-gray-400">
+                            <button class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded transition-colors">Set</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/10 rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Deposit Tokens</h3>
+                        <div class="flex gap-2">
+                            <input type="text" placeholder="Amount in LUV" class="flex-1 px-3 py-2 bg-black/20 rounded border border-gray-600 text-white placeholder-gray-400">
+                            <button class="px-4 py-2 bg-green-600 hover:bg-green-700 rounded transition-colors">Deposit</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/10 rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Withdraw Tokens</h3>
+                        <div class="flex gap-2">
+                            <input type="text" placeholder="Amount in LUV" class="flex-1 px-3 py-2 bg-black/20 rounded border border-gray-600 text-white placeholder-gray-400">
+                            <button class="px-4 py-2 bg-orange-600 hover:bg-orange-700 rounded transition-colors">Withdraw</button>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/10 rounded-lg p-4">
+                        <h3 class="font-semibold mb-2 text-red-400">Emergency Withdraw</h3>
+                        <button class="w-full py-2 bg-red-600 hover:bg-red-700 rounded transition-colors">Withdraw All Tokens</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Transaction Logs -->
+            <div class="lg:col-span-2 bg-black/20 backdrop-blur-lg rounded-xl p-6 border border-gray-500/30">
+                <h2 class="text-xl font-semibold mb-4">Transaction Logs</h2>
+                <div class="space-y-2 max-h-64 overflow-y-auto">
+                    <div class="text-gray-400 text-center py-4">No transactions yet</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Status Message -->
+        <div class="mt-6 p-4 bg-black/20 backdrop-blur-lg rounded-xl border border-gray-500/30">
+            <div class="text-center">Connect your wallet to interact with the SHAMBA LUV Airdrop</div>
+        </div>
+    </div>
+</body>
+</html>
