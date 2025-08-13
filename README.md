@@ -51,7 +51,7 @@ A complete interaction interface for the ShambaLuvAirdrop.sol smart contract dep
 2. **Configure Environment**
    Create a `.env` file in the root directory:
    ```env
-   VITE_AIRDROP_CONTRACT_ADDRESS=0x_your_deployed_airdrop_contract_address
+   VITE_AIRDROP_CONTRACT_ADDRESS=0x583F6D336E777c461FbfbeE3349D7D2dA9dc5e51
    ```
 
 3. **Start Development Server**
